@@ -11,32 +11,42 @@ import ProductCollectionGrid from "../collection/CollectionGrid";
 import ProductOccassionGrid from "../occassion/OccassionGrid";
 import ProductStyleGrid from "../style/StyleGrid";
 import ProductPrintGrid from "../product-print/PrintGrid";
+// import OrderManagementGrid from "../order-management/ordermangementgrid";
 
 function LeftPanelRoute() {
   const location = useLocation();
   const getStyle = (tabName: string) => {
     if (tabName) {
-      if (tabName === "category" && location.pathname === "/") {
-        return "text-start nav-link text-light my-2 active";
+      if (tabName === "order-management" && location.pathname === "/") {
+        return "text-start text-black my-2";
       }
       if (`/${tabName}` === location.pathname) {
-        return "text-start nav-link text-light my-2 active";
+        return "text-start text-black my-2";
       }
-      return "text-start nav-link text-light my-2";
+      return "text-start text-black my-2";
     }
   };
+
   return (
     <section className="py-5 bg-dark">
       <div className="container-fluid">
         {/* left side navigation Pane */}
 
-        <div className="d-flex align-items-start d-flex flex-row flex-shrink-0 p-3 text-white">
+        <div className="flex items-start p-3 text-white">
           <div
-            className="nav flex-column nav-pills me-3"
+            className="nav flex-col me-3"
             id="v-pills-tab"
             aria-orientation="vertical"
-            style={{ maxHeight: 600, overflowY: "scroll", flexFlow: "column", }}
+            style={{ maxHeight: 600, overflowY: "scroll", flexFlow: "column" }}
           >
+            <Link
+              className={getStyle("order-management")}
+              id="v-pills-management-tab"
+              type="button"
+              to={"/order-management"}
+            >
+              Order Management
+            </Link>
             <Link
               className={getStyle("category")}
               id="v-pills-home-tab"
@@ -132,6 +142,7 @@ function LeftPanelRoute() {
           >
             <Routes>
               <Route path="/" element={<CategoryGrid />} />
+              {/* <Route path="/" element={<OrderManagementGrid />} /> */}
               <Route path="category" element={<CategoryGrid />} />
               <Route path="sub-category" element={<SubCategoryGrid />} />
               <Route path="fabric" element={<FabricGrid />} />
@@ -143,7 +154,8 @@ function LeftPanelRoute() {
               <Route path="occassion" element={<ProductOccassionGrid />} />
               <Route path="style" element={<ProductStyleGrid />} />
               <Route path="print" element={<ProductPrintGrid />} />
-              <Route path="*" element={<CategoryGrid />} />
+              {/* <Route path="order-detail" element={<OrderDetails/>}/> */}
+              {/* <Route path="*" element={<OrderManagementGrid />} /> */}
             </Routes>
             <Outlet></Outlet>
           </div>

@@ -1,0 +1,246 @@
+[
+  {
+    "cartId": "86ee0465-5f9b-4ca8-acca-f674f77fe23e",
+    "userId": "9b55278e-a7a6-4677-831e-059e740b3702",
+    "cartLineItems": [
+      {
+        "id": "c46e0ca0-b3d7-4726-9ab4-392b4067b633",
+        "createdAt": "2024-09-07T12:35:41.446Z",
+        "updatedAt": "2024-09-07T12:35:41.446Z",
+        "createdBy": null,
+        "modifiedBy": null,
+        "perItemActualPrice": "222",
+        "perItemOfferPrice": "22",
+        "perItemFinalPrice": "27.28",
+        "totalActualPrice": "444",
+        "totalOfferPrice": "44",
+        "sgstPerItem": "2.6399999999999997",
+        "cgstPerItem": "2.6399999999999997",
+        "totalSgst": "5.279999999999999",
+        "totalCgst": "5.279999999999999",
+        "promoDescription": null,
+        "promoDiscountPerItem": "0",
+        "totalPromoDiscount": "0",
+        "totalFinalPrice": "54.56",
+        "cartLineItem": {
+          "id": "72b5e1a8-6ad2-497d-895d-8d806b09af69",
+          "quantity": "2"
+        },
+        "productId": "5f30170b-ad95-41d4-a707-a21d0d1d86eb",
+        "productTypeId": "483b0b3a-8d13-4ef3-80d6-49ef3adb74f6",
+        "productName": "saree2",
+        "actualPrice": "22253.28",
+        "offerPrice": "225.279999999999999",
+        "quantity": "2",
+        "finalTotalPrice": "54.56"
+      },
+      {
+        "id": "d04dfbcd-6f06-46ad-b454-7814cd6fd0c2",
+        "createdAt": "2024-09-07T12:35:41.446Z",
+        "updatedAt": "2024-09-07T12:35:41.446Z",
+        "createdBy": null,
+        "modifiedBy": null,
+        "perItemActualPrice": "12",
+        "perItemOfferPrice": "12",
+        "perItemFinalPrice": "14.879999999999999",
+        "totalActualPrice": "12",
+        "totalOfferPrice": "12",
+        "sgstPerItem": "1.44",
+        "cgstPerItem": "1.44",
+        "totalSgst": "1.44",
+        "totalCgst": "1.44",
+        "promoDescription": null,
+        "promoDiscountPerItem": "0",
+        "totalPromoDiscount": "0",
+        "totalFinalPrice": "14.879999999999999",
+        "cartLineItem": {
+          "id": "ec699a69-0377-4a5c-8924-702fa2ec03e4",
+          "quantity": "1"
+        },
+        "productId": "49f466fe-3878-4bad-95d8-4dd46e315445",
+        "productTypeId": "483b0b3a-8d13-4ef3-80d6-49ef3adb74f6",
+        "productName": "saree",
+        "actualPrice": "122.88",
+        "offerPrice": "122.88",
+        "quantity": "1",
+        "finalTotalPrice": "14.879999999999999"
+      }
+    ],
+    "totalActualPrice": "456",
+    "totalFinalPrice": "69.44",
+    "totalCgst": "6.719999999999999",
+    "totalSgst": "6.719999999999999",
+    "OrderStatus": "order created",
+    "orderType": "cashondelivery",
+    "orderCancellationType": "",
+    "orderCancellationReason": null,
+    "paymentInfo": {
+      "id": "3e3aba90-0e48-4495-8c9b-7af6bad8df8c",
+      "totalAmount": "69.44",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "gatewayOrderId": null,
+      "gatewayPaymentId": null,
+      "failureReason": null
+    },
+    "orderTimeLine": [
+      {
+        "id": "f1e5748b-f98b-4bb8-80ef-beb46ba6a18b",
+        "eventDate": "7/9/2024, 6:05:41 pm",
+        "eventType": "order created",
+        "description": null
+      },
+      {
+        "id": "feae7fa1-5cf8-446f-8e7c-4ad62aef9da6",
+        "eventDate": "7/9/2024, 6:05:42 pm",
+        "eventType": "pending for processing",
+        "description": null
+      }
+    ],
+    "orderId": "OD-144438432",
+    "billingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877",
+    "shippingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877"
+  },
+  {
+    "cartId": "b8be1560-ce24-4fec-9bce-b4dc68e6091c",
+    "userId": "9b55278e-a7a6-4677-831e-059e740b3702",
+    "cartLineItems": [
+      {
+        "id": "bc3976c8-3daf-4f5d-8a7a-eb9fad57f4a7",
+        "createdAt": "2024-09-12T17:59:22.868Z",
+        "updatedAt": "2024-09-12T17:59:22.868Z",
+        "createdBy": null,
+        "modifiedBy": null,
+        "perItemActualPrice": "12",
+        "perItemOfferPrice": "12",
+        "perItemFinalPrice": "14.879999999999999",
+        "totalActualPrice": "12",
+        "totalOfferPrice": "12",
+        "sgstPerItem": "1.44",
+        "cgstPerItem": "1.44",
+        "totalSgst": "1.44",
+        "totalCgst": "1.44",
+        "promoDescription": null,
+        "promoDiscountPerItem": "0",
+        "totalPromoDiscount": "0",
+        "totalFinalPrice": "14.879999999999999",
+        "cartLineItem": {
+          "id": "1eec83ef-7b89-4db0-8868-ddfe3bddf6d7",
+          "quantity": "1"
+        },
+        "productId": "49f466fe-3878-4bad-95d8-4dd46e315445",
+        "productTypeId": "483b0b3a-8d13-4ef3-80d6-49ef3adb74f6",
+        "productName": "saree",
+        "actualPrice": "122.88",
+        "offerPrice": "122.88",
+        "quantity": "1",
+        "finalTotalPrice": "14.879999999999999"
+      }
+    ],
+    "totalActualPrice": "12",
+    "totalFinalPrice": "14.879999999999999",
+    "totalCgst": "1.44",
+    "totalSgst": "1.44",
+    "OrderStatus": "order created",
+    "orderType": "cashondelivery",
+    "orderCancellationType": "",
+    "orderCancellationReason": null,
+    "paymentInfo": {
+      "id": "0695a0e1-e95a-423a-83ca-369dbfe22b9f",
+      "totalAmount": "14.879999999999999",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "gatewayOrderId": null,
+      "gatewayPaymentId": null,
+      "failureReason": null
+    },
+    "orderTimeLine": [
+      {
+        "id": "b641773d-06e9-4676-9e01-bc332ca9f9a7",
+        "eventDate": "12/9/2024, 11:29:22 pm",
+        "eventType": "order created",
+        "description": null
+      },
+      {
+        "id": "e9de35f8-d54d-48a8-9900-9184525ffcd2",
+        "eventDate": "12/9/2024, 11:29:23 pm",
+        "eventType": "pending for processing",
+        "description": null
+      }
+    ],
+    "orderId": "OD-191494315",
+    "billingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877",
+    "shippingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877"
+  },
+  {
+    "cartId": "2a8739f3-d1dd-43b7-b224-e7aeff8b6cb0",
+    "userId": "9b55278e-a7a6-4677-831e-059e740b3702",
+    "cartLineItems": [
+      {
+        "id": "feba0daa-b6da-4fc0-8635-74815a32c16e",
+        "createdAt": "2024-09-12T18:16:36.653Z",
+        "updatedAt": "2024-09-12T18:16:36.653Z",
+        "createdBy": null,
+        "modifiedBy": null,
+        "perItemActualPrice": "222",
+        "perItemOfferPrice": "22",
+        "perItemFinalPrice": "27.28",
+        "totalActualPrice": "222",
+        "totalOfferPrice": "22",
+        "sgstPerItem": "2.6399999999999997",
+        "cgstPerItem": "2.6399999999999997",
+        "totalSgst": "2.6399999999999997",
+        "totalCgst": "2.6399999999999997",
+        "promoDescription": null,
+        "promoDiscountPerItem": "0",
+        "totalPromoDiscount": "0",
+        "totalFinalPrice": "27.28",
+        "cartLineItem": {
+          "id": "4abf95a8-bf04-4b5a-9ec7-85752dbce974",
+          "quantity": "1"
+        },
+        "productId": "5f30170b-ad95-41d4-a707-a21d0d1d86eb",
+        "productTypeId": "483b0b3a-8d13-4ef3-80d6-49ef3adb74f6",
+        "productName": "saree2",
+        "actualPrice": "22253.28",
+        "offerPrice": "225.279999999999999",
+        "quantity": "1",
+        "finalTotalPrice": "27.28"
+      }
+    ],
+    "totalActualPrice": "222",
+    "totalFinalPrice": "27.28",
+    "totalCgst": "2.6399999999999997",
+    "totalSgst": "2.6399999999999997",
+    "OrderStatus": "order created",
+    "orderType": "cashondelivery",
+    "orderCancellationType": "",
+    "orderCancellationReason": null,
+    "paymentInfo": {
+      "id": "8414ff6e-355c-4798-be96-382aecfe4b35",
+      "totalAmount": "27.28",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "gatewayOrderId": null,
+      "gatewayPaymentId": null,
+      "failureReason": null
+    },
+    "orderTimeLine": [
+      {
+        "id": "fc8acd12-1c8a-45f1-a6a9-4450fe1faf1f",
+        "eventDate": "12/9/2024, 11:46:36 pm",
+        "eventType": "order created",
+        "description": null
+      },
+      {
+        "id": "13eecfdd-50ea-4292-a807-6467140fea88",
+        "eventDate": "12/9/2024, 11:46:36 pm",
+        "eventType": "pending for processing",
+        "description": null
+      }
+    ],
+    "orderId": "OD-967435305",
+    "billingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877",
+    "shippingAddress": "test add,str1,vi1,kolkata,west,700001,7777888877"
+  }
+]

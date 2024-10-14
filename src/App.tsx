@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import "./";
-import "./App.css";
 import Index from "./component/index";
 import { RootContext, rootContext } from "./context/root.context";
 import { HashRouter as Router } from "react-router-dom";

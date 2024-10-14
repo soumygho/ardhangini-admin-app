@@ -2,7 +2,6 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import {
   CreateProductTypeDto,
   ProductTypeEntity,
@@ -23,6 +22,7 @@ import {
   colDefs,
   defaultColDef,
 } from "../../context/product-type/product-type.service";
+import { Button } from "../ui/button";
 
 function ProductTypeGrid() {
   // Row Data: The data to be displayed.
@@ -142,7 +142,7 @@ function ProductTypeGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -157,7 +157,7 @@ function ProductTypeGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedRow ? false : true}
             >

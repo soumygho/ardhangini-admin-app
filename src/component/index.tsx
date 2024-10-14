@@ -6,6 +6,7 @@ import LeftPanel from "./layout/LeftPanel";
 import LeftPanelRoute from "./layout/LeftPanelRoute";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
+import Sidebar from "./layout/Sidebar";
 
 function Index() {
   const [accessToken, setAccessToken] = useState<string | undefined>(undefined);
@@ -23,9 +24,10 @@ function Index() {
       <indexContext.Provider value={indexContextData}>
         <Header></Header>
         {!accessToken && <Login></Login>}
-        {accessToken && <LeftPanelRoute></LeftPanelRoute>}{" "}
-        {/*<LeftPanel></LeftPanel>*/}
-        <Footer></Footer>
+        {accessToken && <Sidebar></Sidebar>}
+        {/* {accessToken && <LeftPanelRoute></LeftPanelRoute>} */}
+        {/* <LeftPanel></LeftPanel> */}
+        {/* <Footer></Footer> */}
       </indexContext.Provider>
     </>
   );

@@ -2,16 +2,27 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import {
   CreateProductColorDto,
   ProductColorEntity,
 } from "../../services/openapi/api";
 import FabricModal from "./ColorModal";
 import Spinner from "../common/spinner";
-import { CREATE_MODAL_TITLE, createColor, deleteColor, EDIT_MODAL_TITLE, getAllColors, ProductColourContext, updateColor, productColorContext, colDefs, defaultColDef } from '../../context/color/color.service';
+import {
+  CREATE_MODAL_TITLE,
+  createColor,
+  deleteColor,
+  EDIT_MODAL_TITLE,
+  getAllColors,
+  ProductColourContext,
+  updateColor,
+  productColorContext,
+  colDefs,
+  defaultColDef,
+} from "../../context/color/color.service";
 import { showToast } from "../../context/root.context";
 import ProductColourModal from "./ColorModal";
+import { Button } from "../ui/button";
 
 function ProductColorGrid() {
   // Row Data: The data to be displayed.
@@ -91,7 +102,7 @@ function ProductColorGrid() {
       showToast("Deleted!");
     } catch (ex) {
       console.error(ex);
-    }finally {
+    } finally {
       setShowSpinner(false);
     }
   };
@@ -131,7 +142,7 @@ function ProductColorGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -146,7 +157,7 @@ function ProductColorGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedRow ? false : true}
             >

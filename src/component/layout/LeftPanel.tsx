@@ -9,10 +9,10 @@ import ManufacturerGrid from '../manufacturer/ManufacturerGrid'
 function LeftPanel() {
   return (
     (
-        <section className="py-5 bg-dark">
-          <div className="container-fluid">
+        <section className="py-5 bg-black">
+          <div className="border border-black">
             {/* left side navigation Pane */}
-            <div className="d-flex align-items-start d-flex flex-row flex-shrink-0 p-3 text-white">
+            <div className="">
               <div
                 className="nav flex-column nav-pills me-3"
                 id="v-pills-tab"

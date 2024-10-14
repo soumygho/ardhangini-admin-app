@@ -2,12 +2,12 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import { CreateProductOccassionDto, ProductOccassionEntity } from "../../services/openapi/api";
 import Spinner from "../common/spinner";
 import { defaultColDef, showToast } from "../../context/root.context";
 import ProductOccassionModal from "./OccassionModal";
 import { colDefs, CREATE_MODAL_TITLE, createOccassion, deleteOccassion, EDIT_MODAL_TITLE, getAllOccassions, productOccassionContext, ProductOccassionContext, updateOccassion } from "../../context/occassion/occassion.service";
+import { Button } from "../ui/button";
 
 function ProductOccassionGrid() {
   // Row Data: The data to be displayed.
@@ -127,7 +127,7 @@ function ProductOccassionGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -142,7 +142,7 @@ function ProductOccassionGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedRow ? false : true}
             >

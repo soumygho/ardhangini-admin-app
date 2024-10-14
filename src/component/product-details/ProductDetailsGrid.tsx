@@ -2,7 +2,6 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import {
   CategoryEntity,
   CreateProductDto,
@@ -34,6 +33,7 @@ import { getAllCategories } from "../../context/category/category.service";
 import { getAllProductTypes } from "../../context/product-type/product-type.service";
 import { config, RootContext, rootContext } from "../../context/root.context";
 import ProductFileUploadModal from "./ProductFileUploadModal";
+import { Button } from "../ui/button";
 
 type ProductFilter = {
   category: string | null;
@@ -250,7 +250,7 @@ function ProductDetailsGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -265,7 +265,7 @@ function ProductDetailsGrid() {
               Edit
             </Button>
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleProductImageUpload}
               disabled={selectedRow ? false : true}
@@ -273,7 +273,7 @@ function ProductDetailsGrid() {
               Edit Product Image
             </Button>
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleEditClick}
               disabled={selectedRow ? false : true}
@@ -289,7 +289,7 @@ function ProductDetailsGrid() {
               Recharge Inventory
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleEditClick}
               disabled={selectedRow ? false : true}
@@ -297,7 +297,7 @@ function ProductDetailsGrid() {
               Throw From Inventory
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedRow ? false : true}
             >

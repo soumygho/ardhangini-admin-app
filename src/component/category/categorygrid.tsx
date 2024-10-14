@@ -2,7 +2,6 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import CategoryModal from "./categoryModal";
 import { CategoryApi, CreateCategoryDto } from "../../services/openapi/api";
 import { CategoryEntity } from "../../services/openapi/api";
@@ -14,6 +13,7 @@ import {
   defaultColDef,
 } from "../../context/category/category.service";
 import { getAxiosConfiguration } from "../../util/axios-configuration.util";
+import { Button } from "../ui/button";
 
 function CategoryGrid() {
   // Row Data: The data to be displayed.
@@ -81,7 +81,7 @@ function CategoryGrid() {
     }
   };
 
-  const showToast = (message: string) => toast(message, {autoClose: 100});
+  const showToast = (message: string) => toast(message, { autoClose: 100 });
   useEffect(() => {
     getAllCategories();
   }, []);
@@ -98,11 +98,8 @@ function CategoryGrid() {
   return (
     <>
       <context.Provider value={categoryContext}>
-        <div className="row">
-          <div
-            className="col-12 ag-theme-quartz" // applying the Data Grid theme
-            style={{ height: 500 }} // the Data Grid will fill the size of the parent container
-          >
+        <div className="">
+          <div className="ag-theme-quartz" style={{ height: 500 }}>
             <AgGridReact
               ref={gridRef}
               rowData={rowData}
@@ -116,7 +113,7 @@ function CategoryGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -131,7 +128,8 @@ function CategoryGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
+              className="bg-red-500"
               style={{ marginTop: "10px" }}
               disabled={selectedCategory ? false : true}
             >

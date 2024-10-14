@@ -1,26 +1,25 @@
 import React from "react";
 import logo from "../../images/logo.png";
+
 function Header() {
   const accessToken: string | undefined = undefined;
+
   return (
-    <section className="brandlogo-sec py-3 bg-light d-none d-md-block">
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-md-2">
-            <a href="/">
-              <img src={logo} alt="Logo" className="img-fluid" width="80" />
+    <header className="fixed top-0 left-0 w-full bg-gray-700 shadow shadow-slate-100 z-50">
+      <div className="flex items-center justify-between p-2">
+        <a href="/" className="flex items-center gap-x-4">
+          <img src={logo} alt="Logo" className="h-10 w-10 border-2 border-slate-100 rounded-full" />
+          <p className="text-white text-xl">ARDHANGINI</p>
+        </a>
+        {accessToken && (
+          <div className="bg-red-500">
+            <a href="/" className="text-white">
+              Logout
             </a>
           </div>
-          {accessToken && (
-            <div className="col-md-10 text-end">
-              <a href="/" className="btn btn-primary">
-                Logout
-              </a>
-            </div>
-          )}
-        </div>
+        )}
       </div>
-    </section>
+    </header>
   );
 }
 

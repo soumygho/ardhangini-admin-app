@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useState } from "react";
-import { Button, Form } from "react-bootstrap";
+// import { Button, Form } from "react-bootstrap";
 import {
   productDetailsContext,
   ProductDetailsContext,
@@ -29,7 +29,7 @@ function ProductImageUpload() {
     <div className="container">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
-          <Form.Group controlId="formFile" className="mb-3">
+          {/* <Form.Group controlId="formFile" className="mb-3">
             <Form.Label>Default file input example</Form.Label>
             <Form.Control type="file" {...register("file")} />
           </Form.Group>
@@ -42,7 +42,7 @@ function ProductImageUpload() {
           />
           <Form.Text id="passwordHelpBlock" muted>
             You should provide the description.
-          </Form.Text>
+          </Form.Text> */}
         </div>
         <div className="row">
           <button type="submit">save</button>{" "}

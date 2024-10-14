@@ -2,11 +2,11 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import { CreateManufacturerDto, ManufacturerEntity } from "../../services/openapi/api";
 import { ToastContainer } from "react-toastify";
 import { createManufacturer, deleteManufacturer, getAllManufacturers, ManufacturerContext, showToast, updateManufacturer, manufacturerContext, colDefs, defaultColDef } from '../../context/manufacturer/manufacturer.service';
 import ManufacturerModal from "./ManufacturerModal";
+import { Button } from "../ui/button";
 
 function ManufacturerGrid() {
   // Row Data: The data to be displayed.
@@ -111,7 +111,7 @@ function ManufacturerGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -126,7 +126,7 @@ function ManufacturerGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedRow ? false : true}
             >

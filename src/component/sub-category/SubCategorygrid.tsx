@@ -2,7 +2,6 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridReact } from "ag-grid-react";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "react-bootstrap";
 import {
   CategoryApi,
   CreateSubcategoryDto,
@@ -20,9 +19,9 @@ import {
 import CategoryFilter from "./CategoryFilter";
 import SubCategoryModal from "./subcategoryModal";
 import { getAxiosConfiguration } from "../../util/axios-configuration.util";
+import { Button } from "../ui/button";
 
 function SubCategoryGrid() {
-  
   // Row Data: The data to be displayed.
   const [rowData, setRowData] = useState<SubcategoryEntity[]>([]);
   const [title, setTitle] = useState("Add SubCategory");
@@ -63,7 +62,9 @@ function SubCategoryGrid() {
 
   const getAllSubCategories = async () => {
     try {
-      const subCategoryApi: SubcategoryApi = new SubcategoryApi(getAxiosConfiguration());
+      const subCategoryApi: SubcategoryApi = new SubcategoryApi(
+        getAxiosConfiguration()
+      );
       setRowData((await subCategoryApi.subcategoryControllerFindAll()).data);
     } catch (ex) {
       console.error(ex);
@@ -72,7 +73,9 @@ function SubCategoryGrid() {
 
   const getAllSubCategoriesByCategory = async () => {
     try {
-      const subCategoryApi: SubcategoryApi = new SubcategoryApi(getAxiosConfiguration());
+      const subCategoryApi: SubcategoryApi = new SubcategoryApi(
+        getAxiosConfiguration()
+      );
       setRowData(
         (
           await subCategoryApi.subcategoryControllerFindAllByCategory(
@@ -106,7 +109,9 @@ function SubCategoryGrid() {
 
   const createSubCategory = async (payLoad: CreateSubcategoryDto) => {
     try {
-      const subCategoryApi: SubcategoryApi = new SubcategoryApi(getAxiosConfiguration());
+      const subCategoryApi: SubcategoryApi = new SubcategoryApi(
+        getAxiosConfiguration()
+      );
       await subCategoryApi.subcategoryControllerCreate(payLoad);
     } catch (ex) {
       console.error(ex);
@@ -119,7 +124,9 @@ function SubCategoryGrid() {
   ) => {
     console.log("calling update subcategory");
     try {
-      const subCategoryApi: SubcategoryApi = new SubcategoryApi(getAxiosConfiguration());
+      const subCategoryApi: SubcategoryApi = new SubcategoryApi(
+        getAxiosConfiguration()
+      );
       await subCategoryApi.subcategoryControllerUpdate(id, payLoad);
       showToast("Updated!");
     } catch (ex) {
@@ -177,7 +184,7 @@ function SubCategoryGrid() {
         <div className="row">
           <div className="col-8">
             <Button
-              variant="primary"
+              variant="default"
               style={{ marginRight: "10px", marginTop: "10px" }}
               onClick={handleNewClick}
             >
@@ -192,7 +199,7 @@ function SubCategoryGrid() {
               Edit
             </Button>
             <Button
-              variant="danger"
+              variant="default"
               style={{ marginTop: "10px" }}
               disabled={selectedSubCategory ? false : true}
             >
